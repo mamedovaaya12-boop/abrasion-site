@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="menu">
+        <a href="index.html">ГЛАВНАЯ</a> |
+        <a href="portfolio.html">ПОРТФОЛИО</a> |
+        <a href="process.html">ПРОЦЕСС</a> |
+        <a href="contact.html">КОНТАКТЫ</a>
+    </div>
+</header>
+
+<main>
+    <h1>Связаться с нами</h1>
+    
+    <form id="form">
+        <input type="text" placeholder="Ваше имя" required><br>
+        <input type="tel" placeholder="Телефон" required><br>
+        <select>
+            <option>Лёгкий кастом</option>
+            <option>Средний кастом</option>
+            <option>Полный кастом</option>
+        </select><br>
+        <button type="submit">Отправить заявку</button>
+    </form>
+    
+    <div class="contacts">
+        <p><b>Адрес:</b> Москва, ул. Тверская, д.5</p>
+        <p><b>Телефон:</b> +7 (999) 562-52-67</p>
+        <p><b>Telegram:</b> @abrasion</p>
+    </div>
+</main>
+
+<footer>
+    <p>Abrasion — custom denim.</p>
+</footer>
+
+<script>
+    document.getElementById('form').onsubmit = function(e) {
+        e.preventDefault();
+        alert('Заявка отправлена!');
+        this.reset();
+    }
+</script>
+
+</body>
+</html>
